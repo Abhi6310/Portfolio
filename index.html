@@ -1,0 +1,432 @@
+<!--Main Portfolio Website-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website! I am a student at the University of Boulder studying Computer Science. I have an interest towards cybersecurity, AI, and system hardware. Check out my projects and repos and feel free to contact me for any inquiries."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Abhinav Chalise's Portfolio'">
+<meta itemprop="description" content="Welcome to my portfolio website! I am a student at the University of Boulder studying Computer Science. I have an interest towards cybersecurity, AI, and system hardware. Check out my projects and repos and feel free to contact me for any inquiries.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://ossportfolio.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abhinav Chalise's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website! I am a student at the University of Boulder studying Computer Science. I have an interest towards cybersecurity, AI, and system hardware. Check out my projects and repos and feel free to contact me for any inquiries.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abhinav Chalise's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website! I am a student at the University of Boulder studying Computer Science. I have an interest towards cybersecurity, AI, and system hardware. Check out my projects and repos and feel free to contact me for any inquiries.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Abhinav Chalise's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">About</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hello, I'm Abhinav Chalise</span>
+            <span>Software Devloper</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            I am a student at the University of Colorado Boulder passionate about cybersecurity, AI, and system hardware. I love to code and learn new things and I am always looking for new opportunities to learn and grow.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Contact Me</a>
+            <a href="#work" class="btn btn-secondary">View my projects</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Tech Stack</h2>
+          <div class="logos">
+            <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/techStack/c++.svg"
+                alt="C-Plus-Plus"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/techStack/CSS3.svg"
+                alt="CSS"
+                class="logo"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/techStack/HTML5.svg"
+                alt="HTML"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/techStack/Java.svg"
+                alt="Java"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/techStack/JavaScript.svg"
+                alt="JS"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/techStack/Python.svg"
+                alt="Python"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/techStack/SQL.svg"
+                alt="SQL"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="assets/images/techStack/TypeScript.svg"
+                alt="TypeScript"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="assets/images/techStack/PostgreSQL.svg"
+                alt="Postgres"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/techStack/Docker.svg"
+                alt="Docker"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/techStack/MongoDB.svg"
+                alt="MongoDB"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/techStack/VS.svg"
+                alt="Visual Studio"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Projects</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Personal Portfolio Website</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  A personal portfolio website made to showcase my projects and skills using:
+                </p>
+                <!-- Add technologies you used to build the project -->
+                <ol class="work-technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Hosted on Github Pages</li>
+                </ol>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="https://github.com/Abhi6310/Portfolio"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/portfolio-template.png"
+                  alt="Personal Portfolio"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Custom Unix Shell</h3>
+                <!-- Add small description of your project  -->
+
+                <p class="work-text">This is a custom Unix Shell designed to familize myself with process control and signaling. By writing a simple Unix Shell program, I was able to understand job control and gain familiarity with github workflows, linux, and bash commands</p>
+                <ol class="work-technologies">
+                  <li>C</li>
+                  <li>Linux Bash</li>
+                  <li>Material UI</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                     <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="https://github.com/Abhi6310/Custom-Unix-Shell"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/Unix_Shell.jpg"
+                  alt="unix shell"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Image Caption Generator</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                    This program, once completed, will be able to take an image, apply a filter onto the image using optimized memory intensive processes and process the input through an AI algorithm that will create a caption for the image.
+                </p>
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>C++</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >This project is In Progress</a
+                  >
+
+                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/lens.jpg"
+                  alt="lens"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Currently seeking internship opportunities
+              </strong>
+              <p class="contact-text">
+                As a Junior, I am taking Computer Science and Electrical Engineering courses for the rest of my undergraduate. I have a strong intrest towards cybersecurity as most of my coursework until now has consisted of system design courses such as Operating Systems, Computer Systems, and Database Systems.
+              </p>
+              <p class="contact-text">
+                I'm learning new things every day and have the passion to learn and grow into a Professional Software Developer.
+              </p>
+              <!-- Replace src with your signatures and name -->
+              <img
+                src="assets/images/signature.png"
+                alt="Abhinav Chalise"
+                class="signatures"
+                loading="lazy"
+              />
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/Abhi6310" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/abhinav-chalise-6bb31920b/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Designed by Abhinav Chalise
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Mode</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
